@@ -24,7 +24,7 @@ $ npm i nodemon -D
 ```json
 {
   "scripts": {
-    "start": "node index.js"
+    "dev": "nodemon babel-node src/index.js"
   }
 }
 ```
@@ -34,7 +34,7 @@ $ npm i nodemon -D
 > 사용
 
 ```bash
-$ npm run start
+$ npm run dev
 ```
 
 <br />
