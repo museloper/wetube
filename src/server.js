@@ -7,7 +7,10 @@ const PORT = 4000;
 const app = express();
 
 // GET Request
-app.get("/", () => console.log("Somebody is trying to go home 🙊"));
+app.get("/", (req, res) => {
+  //   return res.end();
+  return res.send("I love you 😍");
+});
 
 app.listen(PORT, () =>
   console.log(`Server listening on http://localhost:${PORT} 🚀`)
